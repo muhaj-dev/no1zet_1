@@ -1,5 +1,6 @@
 import SideNav from "@/components/side-nav";
 import TopNav from "@/components/top-nav";
+import { ScrollArea } from "@/components/ui/scroll-area";
 import { PropsWithChildren } from "react";
 
 export default function Layout({ children }: PropsWithChildren) {
@@ -12,7 +13,11 @@ export default function Layout({ children }: PropsWithChildren) {
         <nav className="h-20 border-b flex items-center">
           <TopNav />
         </nav>
-        <main>{children}</main>
+        <main className="">
+          <ScrollArea className="h-[calc(100vh-5rem)] w-full px-10">
+            {children}
+          </ScrollArea>
+        </main>
       </div>
     </div>
   );

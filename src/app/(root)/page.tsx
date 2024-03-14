@@ -167,7 +167,7 @@ function Graph() {
 }
 function Reward() {
   return (
-    <div className="bg-muted p-5 flex flex-col col-span-full items-center space-y-10 rounded-xl">
+    <div className="bg-muted p-5 flex flex-col  col-span-full lg:col-span-1 items-center space-y-10 rounded-xl">
       <div className="space-y-3 flex flex-col items-center">
         <DashboardLogo className="size-14" />
         <h4 className="text-lg font-semibold text-center ">My Rewards</h4>

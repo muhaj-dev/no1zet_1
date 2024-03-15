@@ -14,7 +14,7 @@ export default function Layout({ children }: PropsWithChildren) {
           <TopNav />
         </nav>
         <main className="">
-          <ScrollArea className="h-[calc(100vh-5rem)] w-full px-10">
+          <ScrollArea className="h-[calc(100vh-5rem)] w-full p-5 lg:px-10">
             {children}
           </ScrollArea>
         </main>

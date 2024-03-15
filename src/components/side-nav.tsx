@@ -39,7 +39,7 @@ export default function SideNav(props: Props) {
     {
       label: "staking",
       icon: <StakeIcon />,
-      href: "/staking",
+      href: "/stake",
     },
     {
       label: "stake pool creation",

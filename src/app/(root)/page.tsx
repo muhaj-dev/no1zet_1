@@ -1,4 +1,10 @@
-import { DashboardLogo, StakeIcon } from "@/components/svgs";
+import {
+  ClockIcon,
+  DashboardLogo,
+  GraphIcon,
+  MoneyIcon,
+  StakeIcon,
+} from "@/components/svgs";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
@@ -16,17 +22,17 @@ export default function Page(props: Props) {
     {
       overview: "Average APR",
       figure: "107%",
-      icon: <StakeIcon />,
+      icon: <GraphIcon />,
     },
     {
       overview: "total earning",
       figure: "0.51 SOL",
-      icon: <StakeIcon />,
+      icon: <MoneyIcon />,
     },
     {
       overview: "Total duration",
       figure: "64.3 Weeks",
-      icon: <StakeIcon />,
+      icon: <ClockIcon />,
     },
   ];
 

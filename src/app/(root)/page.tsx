@@ -1,3 +1,4 @@
+import ConnectWallet from "@/components/Wallet";
 import {
   ClockIcon,
   DashboardLogo,

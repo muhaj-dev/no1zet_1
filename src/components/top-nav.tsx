@@ -1,4 +1,6 @@
-import * as React from "react";
+"use client";
+
+import React, { useState } from "react";
 import SearchInput from "./search-input";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "./ui/badge";
@@ -14,6 +16,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import Image from "next/image";
+import ConnectWallet from "./Wallet";
 
 export interface Props {}
 
@@ -85,7 +88,14 @@ function Mobile() {
 }
 
 function Desktop() {
-  const user = false;
+  const [user, setUser] = useState(false);
+  const [connect, setConnect] = useState(false);
+
+  const connectWallet = () => {
+    console.log("connected");
+    setUser(true);
+  };
+
   return (
     <div className="px-10 w-full lg:flex justify-between hidden">
       <SearchInput />
@@ -99,7 +109,7 @@ function Desktop() {
             </div>
             <div className="flex">
               <div className="text-right mr-3">
-                <h5 className="text-sm font-semibold">0xCe2d...76a9</h5>
+                <h5 className="text-sm font-semibold">21.6 SOL</h5>
                 <h5 className="text-xs text-primary">Connected</h5>
               </div>
               <UserAvatar />
@@ -107,10 +117,7 @@ function Desktop() {
           </>
         ) : (
           <>
-            <Button>
-              Connect
-              <Wallet className="ml-4" />
-            </Button>
+            <ConnectWallet />
           </>
         )}
       </div>

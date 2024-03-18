@@ -1,0 +1,8 @@
+
+
+ .wallet-adapter-button, .wallet-adapter-button-trigger{
+    border-radius: 6px !important;
+    background-color: hsl(27, 75%, 49%) !important;
+  color: white !important;
+
+}
